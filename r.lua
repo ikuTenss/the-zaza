@@ -1,16 +1,13 @@
-_G.MinTimer = 60 -- hops if value is higher
-_G.FpsCap = false -- incase you want to limit the fps
-_G.SetFpsCap = 10 -- maximum amount of fps
+
 repeat wait() until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(false)
-if G.FpsCap == true
-	setfpscap(_G.SetFpsCap)
+--setfpscap(10)
 task.wait(5)
 
 if game.PlaceId == 5411459567 then
     repeat task.wait(1) until game.Workspace.Message
 end
-
+_G.MinTimer = 60
 local function notify(text)
     game.StarterGui:SetCore("SendNotification", {
         Title = "RZiln's AFK hop",
