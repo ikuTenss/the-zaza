@@ -1,3 +1,6 @@
+_G.MinTimer = 60 -- hops if value is higher
+_G.FpsCap = false -- incase you want to limit the fps
+_G.SetFpsCap = 10 -- maximum amount of fps
 repeat wait() until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(false)
 if G.FpsCap == true
