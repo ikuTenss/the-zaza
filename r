@@ -24,7 +24,6 @@ if game.GameId == 578392296 then
         game:GetService('TeleportService'):Teleport(5411459567)
     end
 
-    notify("AFK Hop running")
     local function timerCheck()
         local timer = game.Workspace.Message.Text:split(" ")
         local time = tonumber(timer[1])
