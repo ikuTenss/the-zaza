@@ -19,7 +19,6 @@ end
 
 if game.GameId == 578392296 then
     if game.PlaceId ~= 5411459567 then
-        notify("Joining AFK World")
         queue_on_teleport(
             'loadstring(game:HttpGet("https://raw.githubusercontent.com/ikuTenss/the-zaza/main/r", true))()')
         game:GetService('TeleportService'):Teleport(5411459567)
@@ -33,17 +32,14 @@ if game.GameId == 578392296 then
     end
 
     if timerCheck() <= _G.MinTimer then
-        notify("Waiting for reward")
         repeat
             task.wait()
         until timerCheck() > _G.MinTimer
-        notify("Server Hopping")
         task.wait(1)
         queue_on_teleport(
             'loadstring(game:HttpGet("https://raw.githubusercontent.com/ikuTenss/the-zaza/main/r", true))()')
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
     else
-        notify("Server Hopping")
         queue_on_teleport(
             'loadstring(game:HttpGet("https://raw.githubusercontent.com/ikuTenss/the-zaza/main/r", true))()')
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
