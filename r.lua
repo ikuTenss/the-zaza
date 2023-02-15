@@ -1,7 +1,7 @@
 repeat wait() until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(false)
-if G.SetFpsCap == true
-	setfpscap(_G.FpsCap)
+if G.FpsCap == true
+	setfpscap(_G.SetFpsCap)
 task.wait(5)
 
 if game.PlaceId == 5411459567 then
