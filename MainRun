@@ -5,19 +5,12 @@ if game.PlaceId == 5411459567 then
 end
 _G.MinTimer = 60
 
-local function notify(text)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "RZiln's AFK hop",
-        Duration = 5,
-        Text = text
-    })
-end
 
 if game.GameId == 578392296 then
     if game.PlaceId ~= 5411459567 then
         notify("Joining AFK World")
         function queue_on_teleport(
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/ikuTenss/the-zaza/main/MainRun", true))()
+            script:loadstring(game:HttpGet("https://raw.githubusercontent.com/ikuTenss/the-zaza/main/MainRun", true))())
         game:GetService('TeleportService'):Teleport(5411459567)
     end
     notify("AFK Hop running")
@@ -35,12 +28,12 @@ if game.GameId == 578392296 then
         notify("Server Hopping")
         task.wait(1)
         function queue_on_teleport(
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/ikuTenss/the-zaza/main/MainRun", true))()
+            script:loadstring(game:HttpGet("https://raw.githubusercontent.com/ikuTenss/the-zaza/main/MainRun", true))())
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
     else
         notify("Server Hopping")
         function queue_on_teleport(
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/ikuTenss/the-zaza/main/MainRun", true))()
+            script:loadstring(game:HttpGet("https://raw.githubusercontent.com/ikuTenss/the-zaza/main/MainRun", true))())
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
     end
 
